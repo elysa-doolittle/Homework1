@@ -33,13 +33,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "test action",
-                    "type": "Button",
+                    "name": "Dash",
+                    "type": "Value",
                     "id": "99c35dd3-ee93-46c1-912b-1b7de7d28fc0",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Integer",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Jump",
@@ -224,7 +224,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "test action",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

@@ -121,6 +121,28 @@ public bool disabled = false;
     //     canDash = true;
 
     // }
+
+    // [Header("References")]
+    // public Transform orientation;
+
+    [Header("Dashing")]
+    public float dashForce;
+    public float dashUpwardForce;
+
+    private void OnDash()
+    {
+        Dash();
+    }
+
+        private void Dash()
+    {
+        // Vector3 forceToApply = orientation.forward * dashForce + orientation.up * dashUpwardForce;
+        // rb.AddForce(forceToApply, ForceMode.Impulse);
+
+        Vector3 velDirection = rb.velocity.normalized;
+        rb.AddForce(velDirection * dashForce, ForceMode.Impulse);
+
+    }
 }
 
 

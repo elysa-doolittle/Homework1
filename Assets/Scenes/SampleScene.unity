@@ -365,7 +365,6 @@ GameObject:
   - component: {fileID: 215603160}
   - component: {fileID: 215603166}
   - component: {fileID: 215603167}
-  - component: {fileID: 215603168}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -388,6 +387,8 @@ MonoBehaviour:
   disabled: 0
   speed: 5
   jumpHeight: 5
+  dashForce: 20
+  dashUpwardForce: 0
 --- !u!114 &215603161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,25 +638,6 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
---- !u!114 &215603168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215603159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aacdad8e449b4e5ab0c270adccc9692, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orientation: {fileID: 0}
-  playerCam: {fileID: 0}
-  dashForce: 20
-  dashUpwardForce: 0
-  dashDuration: 0.25
-  dashCd: 1.5
-  dashKey: 101
 --- !u!1 &408044296
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +737,7 @@ Transform:
   m_GameObject: {fileID: 408044296}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.37, y: -9.22, z: 27.98}
+  m_LocalPosition: {x: -15.37, y: -7.5, z: 27.98}
   m_LocalScale: {x: 38, y: 1, z: 31.72}
   m_ConstrainProportionsScale: 0
   m_Children: []
