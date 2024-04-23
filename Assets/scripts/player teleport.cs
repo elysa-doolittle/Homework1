@@ -9,12 +9,14 @@ public class PlayerTeleport : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player")) //MAKE SURE YOU TAG THE PLAYERRRRR
         {
             playerg.SetActive(false);
+            Vector3 oldPosition = player.position;
             player.position = destination.position;
             playerg.SetActive(true);
             
+            Debug.Log($"Player teleported from {oldPosition} to {player.position}");
             // Debug.Log(player.position);
         }
     }
